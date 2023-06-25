@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.item_donate">
+
+    <ScrollView
+        android:id="@+id/Nback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/Ybackground0"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ybackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/Ybackground"
+                    app:layout_constraintTop_toTopOf="@+id/Ybackground"
+                    app:srcCompat="@drawable/top_background_gradient" />
+
+                <ImageView
+                    android:id="@+id/Ybackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E92FB2ED"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/Yimage01"
+                    android:layout_width="76dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/Ymyprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/Ymyprofile"
+                    android:textColor="@color/purple_700"
+                    app:layout_constraintEnd_toEndOf="@+id/Yimage01"
+                    app:layout_constraintStart_toStartOf="@+id/Yimage01"
+                    app:layout_constraintTop_toBottomOf="@+id/Yimage01" />
+
+                <TextView
+                    android:id="@+id/Ytitle03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="-50dp"
+                    android:text="Donate details"
+                    android:textAlignment="textEnd"
+                    android:textSize="34sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ybackground0"
+                    app:layout_constraintStart_toStartOf="@+id/Ybackground0"
+                    app:layout_constraintTop_toTopOf="@+id/Yimage01"
+                    app:layout_constraintVertical_bias="0.685" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="409dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ybackground0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Ytitle03" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="415dp">
+
+                <Button
+                    android:id="@+id/Ybtnconfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="120dp"
+                    android:backgroundTint="@color/background"
+                    android:text="@string/Ybtnconfirm"
+                    app:icon="@drawable/baseline_done_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/yquantity" />
+
+                <Button
+                    android:id="@+id/Ybtncancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="120dp"
+                    android:backgroundTint="@color/background"
+                    android:text="@string/Ybtncancel"
+                    app:icon="@drawable/baseline_cancel_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.698"
+                    app:layout_constraintStart_toEndOf="@+id/Ybtnconfirm"
+                    app:layout_constraintTop_toBottomOf="@+id/yquantity" />
+
+                <TextView
+                    android:id="@+id/Ydonate03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Phone no :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Ydonate02" />
+
+                <TextView
+                    android:id="@+id/Ydonate02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="44dp"
+                    android:text="Address :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Ydonate01" />
+
+                <TextView
+                    android:id="@+id/Ydonate01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Charity name :"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/ydname"
+                    android:layout_width="288dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:ems="10"
+                    android:hint="charity name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ydonate01"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/Ydonate01"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/yaddress"
+                    android:layout_width="271dp"
+                    android:layout_height="67dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="address"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ydonate02"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.609"
+                    app:layout_constraintStart_toEndOf="@+id/Ydonate02"
+                    app:layout_constraintTop_toBottomOf="@+id/ydname"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/ycontactno"
+                    android:layout_width="271dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="52dp"
+                    android:ems="10"
+                    android:hint="phone no"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ydonate03"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.233"
+                    app:layout_constraintStart_toEndOf="@+id/Ydonate03"
+                    app:layout_constraintTop_toBottomOf="@+id/yaddress"
+                    app:layout_constraintVertical_bias="0.368" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

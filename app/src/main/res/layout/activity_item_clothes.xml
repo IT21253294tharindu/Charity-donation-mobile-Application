@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.item_clothes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/YimageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/YimageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/YimageView"
+                    app:layout_constraintTop_toTopOf="@+id/YimageView"
+                    app:srcCompat="@drawable/top_background_gradient" />
+
+                <ImageView
+                    android:id="@+id/YimageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E92FB2ED"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/YmageView2"
+                    android:layout_width="76dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/YimageView3"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/YtextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="My Profile"
+                    android:textColor="@color/purple_700"
+                    app:layout_constraintEnd_toEndOf="@+id/YmageView2"
+                    app:layout_constraintStart_toStartOf="@+id/YmageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/YmageView2" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="356dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/white_top_buttons"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/YimageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/YimageView3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/purple_top_buttons"
+                        android:backgroundTint="#34D0E4"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/baseline_settings_accessibility_24" />
+
+                        <TextView
+                            android:id="@+id/textView00000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cloths"
+                            android:textAlignment="center"
+                            android:textColor="#6E7FED" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/purple_top_buttons"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/baseline_enhanced_encryption_24" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medical"
+                            android:textAlignment="center"
+                            android:textColor="#6E7FED" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/purple_top_buttons"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/baseline_fastfood_24" />
+
+                        <TextView
+                            android:id="@+id/textView000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Foods"
+                            android:textAlignment="center"
+                            android:textColor="#6E7FED" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/purple_top_buttons"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView500"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/baseline_school_24" />
+
+                        <TextView
+                            android:id="@+id/textView00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Education"
+                            android:textAlignment="center"
+                            android:textColor="#6E7FED" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="422dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/yquantity"
+                    android:layout_width="370dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="24dp"
+                    android:drawableStart="@drawable/baseline_production_quantity_limits_24"
+                    android:ems="10"
+                    android:hint="Quantity"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/ytype"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="@+id/ytype"
+                    app:layout_constraintTop_toBottomOf="@+id/ytype" />
+
+                <EditText
+                    android:id="@+id/yname"
+                    android:layout_width="386dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="28dp"
+                    android:drawableStart="@drawable/baseline_drive_file_rename_outline_24"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.652"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/ytype"
+                    android:layout_width="378dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="24dp"
+                    android:drawableStart="@drawable/baseline_merge_type_24"
+                    android:ems="10"
+                    android:hint="Type"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/yname"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="@+id/yname"
+                    app:layout_constraintTop_toBottomOf="@+id/yname" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="115dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#E92FB2ED"
+                    android:text="Next"
+                    app:icon="@android:drawable/ic_menu_send"
+                    app:iconTintMode="src_in"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.486"
+                    app:layout_constraintStart_toEndOf="@+id/btndone"
+                    app:layout_constraintTop_toBottomOf="@+id/yquantity"
+                    app:strokeColor="#E92FB2ED" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

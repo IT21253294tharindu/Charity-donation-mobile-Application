@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.item_donated_history">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/Ybackground0"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ybackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/Ybackground"
+                    app:layout_constraintTop_toTopOf="@+id/Ybackground"
+                    app:srcCompat="@drawable/top_background_gradient" />
+
+                <ImageView
+                    android:id="@+id/Ybackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E92FB2ED"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/Yimage01"
+                    android:layout_width="76dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/Ymyprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/Ymyprofile"
+                    android:textColor="@color/purple_700"
+                    app:layout_constraintEnd_toEndOf="@+id/Yimage01"
+                    app:layout_constraintStart_toStartOf="@+id/Yimage01"
+                    app:layout_constraintTop_toBottomOf="@+id/Yimage01" />
+
+                <TextView
+                    android:id="@+id/Ytitle03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="-50dp"
+                    android:text="Donated History"
+                    android:textAlignment="textEnd"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ybackground0"
+                    app:layout_constraintStart_toStartOf="@+id/Ybackground0"
+                    app:layout_constraintTop_toTopOf="@+id/Yimage01"
+                    app:layout_constraintVertical_bias="0.685" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="409dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Ytitle03" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="332dp">
+
+                <TextView
+                    android:id="@+id/NDH02"
+                    android:layout_width="360dp"
+                    android:layout_height="106dp"
+                    android:layout_marginTop="68dp"
+                    android:text="Donated id : "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/YDH01"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="@+id/YDH01"
+                    app:layout_constraintTop_toBottomOf="@+id/YDH01" />
+
+                <TextView
+                    android:id="@+id/YDH01"
+                    android:layout_width="358dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Donated id : "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="151dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="70dp"
+                    android:backgroundTint="#E92FB2ED"
+                    android:drawableStart="@drawable/baseline_done_24"
+                    android:text="Delete"
+                    app:icon="@drawable/baseline_delete_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/YDH01"
+                    app:layout_constraintEnd_toEndOf="@+id/YDH01"
+                    app:layout_constraintTop_toTopOf="@+id/YDH01" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="149dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="70dp"
+                    android:backgroundTint="#E92FB2ED"
+                    android:drawableStart="@drawable/baseline_done_24"
+                    android:text="Delete"
+                    app:icon="@drawable/baseline_delete_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/NDH02"
+                    app:layout_constraintEnd_toEndOf="@+id/NDH02"
+                    app:layout_constraintTop_toTopOf="@+id/NDH02" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="192dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="100dp"
+                    android:ems="10"
+                    android:hint="#20230317_D01"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/YDH01"
+                    app:layout_constraintEnd_toEndOf="@+id/YDH01"
+                    app:layout_constraintStart_toStartOf="@+id/YDH01"
+                    app:layout_constraintTop_toTopOf="@+id/YDH01" />
+
+                <EditText
+                    android:id="@+id/yname"
+                    android:layout_width="219dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="100dp"
+                    android:ems="10"
+                    android:hint="#20230317_D02"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="@+id/NDH02"
+                    app:layout_constraintEnd_toEndOf="@+id/NDH02"
+                    app:layout_constraintStart_toStartOf="@+id/NDH02"
+                    app:layout_constraintTop_toTopOf="@+id/NDH02" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Charity_RegisterationForm">
+
+    <Button
+        android:id="@+id/btnBackCharityRes"
+        android:layout_width="62dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E9525353"
+        android:freezesText="false"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleCharityRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/titleCharityRegister"
+        android:textColor="#050505"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackCharityRes" />
+
+    <EditText
+        android:id="@+id/formCharityName"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formCharityName"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/formOgName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblCharityName"
+        app:layout_constraintTop_toBottomOf="@+id/titleCharityRegister" />
+
+    <EditText
+        android:id="@+id/formcharityWebsite"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formcharityWebsite"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/formCharityPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblcharityWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/formPersonNum" />
+
+    <TextView
+        android:id="@+id/formlblOgName"
+        android:layout_width="136dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblOgName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblRegistrationID"
+        app:layout_constraintEnd_toStartOf="@+id/formOgName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblCharityName" />
+
+    <TextView
+        android:id="@+id/formlblCharityName"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblCharityName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblOgName"
+        app:layout_constraintEnd_toStartOf="@+id/formCharityName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCharityRegister" />
+
+    <TextView
+        android:id="@+id/formlblcharityWebsite"
+        android:layout_width="139dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblcharityWebsite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblCharityPassword"
+        app:layout_constraintEnd_toStartOf="@+id/formcharityWebsite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblPersonNum" />
+
+    <TextView
+        android:id="@+id/formlblCharityPassword"
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblCharityPassword"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegisternext"
+        app:layout_constraintEnd_toStartOf="@+id/formCharityPassword"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblcharityWebsite" />
+
+    <TextView
+        android:id="@+id/formlblCharityEmail"
+        android:layout_width="137dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblCharityEmail"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblCharityAddress"
+        app:layout_constraintEnd_toStartOf="@+id/formCharityEmail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblRegistrationID" />
+
+    <EditText
+        android:id="@+id/formOgName"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formOgName"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/formRegistrationID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblOgName"
+        app:layout_constraintTop_toBottomOf="@+id/formCharityName" />
+
+    <TextView
+        android:id="@+id/formlblPersonNum"
+        android:layout_width="137dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblPersonNum"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblcharityWebsite"
+        app:layout_constraintEnd_toStartOf="@+id/formPersonNum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblTeleNum" />
+
+    <EditText
+        android:id="@+id/formTeleNo"
+        android:layout_width="186dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="@string/formTeleNo"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/formPersonNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblTeleNum"
+        app:layout_constraintTop_toBottomOf="@+id/formCharityAddress" />
+
+    <EditText
+        android:id="@+id/formCharityAddress"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formCharityAddress"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/formTeleNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblCharityAddress"
+        app:layout_constraintTop_toBottomOf="@+id/formCharityEmail" />
+
+    <TextView
+        android:id="@+id/formlblTeleNum"
+        android:layout_width="137dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblTeleNum"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblPersonNum"
+        app:layout_constraintEnd_toStartOf="@+id/formTeleNo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblCharityAddress" />
+
+    <EditText
+        android:id="@+id/formPersonNum"
+        android:layout_width="186dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/formPersonNum"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/formcharityWebsite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblPersonNum"
+        app:layout_constraintTop_toBottomOf="@+id/formTeleNo" />
+
+    <EditText
+        android:id="@+id/formCharityEmail"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formCharityEmail"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/formCharityAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblCharityEmail"
+        app:layout_constraintTop_toBottomOf="@+id/formRegistrationID" />
+
+    <TextView
+        android:id="@+id/formlblCharityAddress"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="enter address"
+        android:text="@string/formlblCharityAddress"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblTeleNum"
+        app:layout_constraintEnd_toStartOf="@+id/formCharityAddress"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblCharityEmail" />
+
+    <EditText
+        android:id="@+id/formCharityPassword"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formCharityPassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegisternext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblCharityPassword"
+        app:layout_constraintTop_toBottomOf="@+id/formcharityWebsite" />
+
+    <TextView
+        android:id="@+id/formlblRegistrationID"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/formlblRegistrationID"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formlblCharityEmail"
+        app:layout_constraintEnd_toStartOf="@+id/formRegistrationID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formlblOgName" />
+
+    <EditText
+        android:id="@+id/formRegistrationID"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/formRegistrationID"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/formCharityEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/formlblRegistrationID"
+        app:layout_constraintTop_toBottomOf="@+id/formOgName" />
+
+    <Button
+        android:id="@+id/btnRegisternext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#0CC0DF"
+        android:text="@string/btnRegisternext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

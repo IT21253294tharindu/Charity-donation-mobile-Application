@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">Heartful Giving</string>
+
+    <string name="NTitle01">Funds</string>
+    <string name="Nmyprofile">My profile</string>
+    <string name="Ncloths">cloths</string>
+    <string name="Nmedical">Medical</string>
+    <string name="Nfoods">Foods</string>
+    <string name="Neducation">Education</string>
+    <string name="Ntotal">Total</string>
+    <string name="Nbtn_done">Done</string>
+    <string name="Nbtn_next">Next</string>
+
+    <string name="Ntitle02">Donate details</string>
+    <string name="Ndonate01">Account name : </string>
+    <string name="Ndonate02">Account number : </string>
+    <string name="Ndonate03">Bank :  </string>
+    <string name="Nbtnconfirm">confirm </string>
+    <string name="Nbtncancel">cancel</string>
+    <string name="Ntitle04">Donated History </string>
+    <string name="NDH01">Donated id :  </string>
+    <string name="Nbtndelete">Delete</string>
+    <string name="Ntitlehome">Donation Types</string>
+    <string name="Nbank">commercial bank</string>
+    <string name="Naccno">80004523</string>
+    <string name="Naccname">arachchi A.M.S.C</string>
+    <string name="Ntitle05">Funding Requested List</string>
+    <string name="NDH04">amount: Rs.25000</string>
+    <string name="NDH03">amount: Rs.35000</string>
+    <string name="Nbtndetail">Details</string>
+    <string name="Nbtndonate">Donate</string>
+    <string name="Nbtnupdate">update</string>
+    <string name="Ntitle06">Requested History</string>
+    <string name="Ntitle10">Bank Informations</string>
+    <string name="Nbtn_back">Back</string>
+    <string name="Ntotalamount">Total</string>
+    <string name="Nupdate">Update</string>
+    <string name="Ndelete">Delete</string>
+    <string name="YTitle01">Funds</string>
+    <string name="Ymyprofile">My profile</string>
+    <string name="Ycloths">cloths</string>
+    <string name="Ymedical">Medical</string>
+    <string name="Yfoods">Foods</string>
+    <string name="Yeducation">Education</string>
+    <string name="Ytotal">Total</string>
+    <string name="Ybtn_done">Done</string>
+    <string name="Ybtn_next">Next</string>
+
+    <string name="Ytitle02">Donate details</string>
+    <string name="Ybtnconfirm">confirm </string>
+    <string name="Ybtncancel">cancel </string>
+
+
+    <string name="backBtn">Back</string>
+    <string name="donateBtn">Donate</string>
+    <!--    for individual LogIn-->
+    <string name="logInTxt">Log In</string>
+    <string name="usernInput">Username</string>
+    <string name="passwInput">Password</string>
+    <string name="logInBtn">Log In</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="notSignedUp">Do not have an account yet?</string>
+    <string name="signUpBtn">Sign Up</string>
+
+    <!--    for sign up page -->
+    <string name="signUpTxt">Sign Up</string>
+    <string name="nameInput">Name</string>
+    <string name="emailInput">Email</string>
+    <string name="telInput">Telephone No</string>
+    <string name="rePasswInput">Re-enter Password</string>
+    <string name="termsNCond">I agree to terms and condions.</string>
+    <string name="btnSignUp">Sign Up</string>
+    <!--    sign up prt 2-->
+    <string name="addProfilePic">Add a profile picture...</string>
+    <string name="addDesc">Tell us a little about yourself...</string>
+    <string name="desc">Hello, I am</string>
+    <string name="skipBtn">Skip</string>
+    <string name="saveBtn">Save</string>
+
+    <!--    charity causes -->
+    <string name="charityTxt">Choose a cause to fight for...</string>
+    <string name="chckBx1">Food Scarcity</string>
+    <string name="chckBx2">Medical Expenses</string>
+    <string name="chckBx3">Education</string>
+    <string name="chckBx4">Homelessness</string>
+    <string name="chckBx5">Child And Elderly Care</string>
+    <string name="seeOrgBtn">See Charity Organizations</string>
+
+    <!--    user profile-->
+    <string name="userProfTxt">User Profile</string>
+    <string name="usernDisplay">user1234</string>
+    <string name="nameDispTxt">Name</string>
+    <string name="nameDisp">a. b. c. d. efgh</string>
+    <string name="emailDispTxt">Email</string>
+    <string name="emailDisp">abcd@gmail.com</string>
+    <string name="PasswDispTxt">Password</string>
+    <string name="passwDisp">12364ad4</string>
+    <string name="telDispTxt">Telephone</string>
+    <string name="telDisp">07x-xxxxxxx</string>
+    <string name="discDip">abcd efght hdakhjakk fndk nfanfak</string>
+    <string name="edtBtn">Edit</string>
+    <string name="deletePBtn">Delete</string>
+
+    <!--    user profile editing-->
+    <string name="userProfEditTxt">Edit Profile</string>
+    <string name="usernEdit">Username</string>
+    <string name="nameEdit">Name</string>
+    <string name="emailEdit">Email</string>
+    <string name="passwEdit">Password</string>
+    <string name="telEdit">Telephone</string>
+    <string name="descEdit">Description</string>
+    <string name="deleteBtn">Delete</string>
+
+    <!--    home page-->
+    <string name="mockListItem1">Mock List Item</string>
+    <string name="search">Search</string>
+
+
+    <!--    for sign up selection page -->
+    <string name="btnBackSignup">back</string>
+    <string name="btnDonorSignup">As a Donor</string>
+    <string name="btnCharitySignup">AS a Charity</string>
+
+
+    <!--    charity profile-->
+
+    <string name="btnBackCharityprofile">back</string>
+    <string name="btnCharityProfileEdt">Edit Profile</string>
+    <string name="btnCharityProfileDelete">Delete Profile</string>
+
+    <string name="titleCprofile">Profile</string>
+
+    <string name="lblRegistrationID">Voluntary social services id:</string>
+    <string name="RegistrationID">v200089</string>
+    <string name="lblCharityName">Name :</string>
+    <string name="CharityName">ABC Charity</string>
+    <string name="lblOgName">Organizer name :</string>
+    <string name="OgName">A.M Kumara</string>
+    <string name="lblcharityWebsite">Website :</string>
+    <string name="charityWebsite">ABC.lk</string>
+    <string name="lblCharityEmail">Email :</string>
+    <string name="CharityEmail">abc@gmail.com</string>
+    <string name="lblCharityAddress">Charity  registered address :</string>
+    <string name="CharityAddress">No:20,abc.</string>
+    <string name="lblTeleNum">Telephone No :</string>
+    <string name="TeleNo">011-XXXXXXX</string>
+    <string name="lblPersonNum">Key Contact person :</string>
+    <string name="PersonNum">077-XXXXXXX</string>
+    <string name="lblCharityPassword">Password :</string>
+    <string name="CharityPassword">CG@00</string>
+
+    <string name="btnsetBudget">set charity budget</string>
+    <string name="btnsetInvetory">Set need items</string>
+
+    <!--  charity Registration Form-->
+
+    <string name="titleCharityRegister">Charity Registration</string>
+
+
+    <string name="formlblCharityName">Name :</string>
+    <string name="formCharityName">enter name</string>
+    <string name="formlblOgName">Organizer name :</string>
+    <string name="formOgName">enter organizer name</string>
+    <string name="formlblRegistrationID">Voluntary social services id:</string>
+    <string name="formRegistrationID">enter registration id</string>
+    <string name="formlblCharityEmail">Email :</string>
+    <string name="formCharityEmail">enter official email</string>
+    <string name="formlblCharityAddress">Charity  registered address :</string>
+    <string name="formCharityAddress">enter address</string>
+    <string name="formlblTeleNum">Telephone No :</string>
+    <string name="formTeleNo">011-xxxxxxx</string>
+    <string name="formlblPersonNum">Key Contact person :</string>
+    <string name="formPersonNum">077-xxxxxxx</string>
+    <string name="formlblcharityWebsite">Website :</string>
+    <string name="formcharityWebsite">enter official website</string>
+    <string name="formlblCharityPassword">Password :</string>
+    <string name="formCharityPassword">enter password</string>
+
+    <string name="btnRegisternext">Sign Up</string>
+
+
+    <!-- Sign up nextpage -->
+    <string name="lblformCharitySymbol">Upload charity symbol :</string>
+    <string name="checkBoxSignup">accept terms &amp; condition</string>
+    <string name="btnSignupRegister">Register</string>
+
+
+</resources>

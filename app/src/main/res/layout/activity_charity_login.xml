@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/usernInput"
+        android:layout_width="364dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/usernInput"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwInput"
+        android:layout_width="364dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/passwInput"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernInput" />
+
+    <Button
+        android:id="@+id/logInBtn"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="#0CC0DF"
+        android:text="@string/logInBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwInput" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="207dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0CC0DF"
+        android:text="@string/cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInBtn" />
+
+    <TextView
+        android:id="@+id/notSignedUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="190dp"
+        android:text="@string/notSignedUp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/signUpBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelBtn" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#0CC0DF"
+        android:onClick="openSignupSelection"
+
+        android:text="@string/signUpBtn"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/notSignedUp"
+        app:layout_constraintTop_toTopOf="@+id/notSignedUp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

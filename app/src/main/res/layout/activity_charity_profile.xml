@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Charity_Profile">
+
+    <Button
+        android:id="@+id/btnCharityProfileDelete"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#E9BD3838"
+        android:text="@string/btnCharityProfileDelete"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCharityProfileEdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RegistrationID"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/RegistrationID"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblRegistrationID"
+        app:layout_constraintTop_toTopOf="@+id/lblRegistrationID" />
+
+    <TextView
+        android:id="@+id/lblRegistrationID"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblRegistrationID"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/RegistrationID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCprofile" />
+
+    <TextView
+        android:id="@+id/CharityAddress"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:text="@string/CharityAddress"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/lblCharityAddress"
+        app:layout_constraintTop_toTopOf="@+id/lblCharityAddress" />
+
+    <TextView
+        android:id="@+id/lblCharityAddress"
+        android:layout_width="188dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblCharityAddress"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCharityEmail" />
+
+    <TextView
+        android:id="@+id/lblCharityPassword"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblCharityPassword"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/charityPassword"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPersonNum" />
+
+    <TextView
+        android:id="@+id/lblTeleNum"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblTeleNum"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCharityAddress" />
+
+    <TextView
+        android:id="@+id/lblPersonNum"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblPersonNum"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTeleNum" />
+
+    <TextView
+        android:id="@+id/PersonNum"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/PersonNum"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblPersonNum"
+        app:layout_constraintTop_toTopOf="@+id/lblPersonNum" />
+
+    <TextView
+        android:id="@+id/CharityEmail"
+        android:layout_width="186dp"
+        android:layout_height="22dp"
+        android:text="@string/CharityEmail"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/lblCharityEmail"
+        app:layout_constraintTop_toTopOf="@+id/lblCharityEmail" />
+
+    <TextView
+        android:id="@+id/lblCharityEmail"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblCharityEmail"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblcharityWebsite" />
+
+    <TextView
+        android:id="@+id/TeleNo"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/TeleNo"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblTeleNum"
+        app:layout_constraintTop_toTopOf="@+id/lblTeleNum" />
+
+    <TextView
+        android:id="@+id/charityPassword"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/CharityPassword"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblCharityPassword"
+        app:layout_constraintTop_toTopOf="@+id/lblCharityPassword" />
+
+    <TextView
+        android:id="@+id/lblCharityName"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblCharityName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/CharityName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistrationID" />
+
+    <TextView
+        android:id="@+id/lblOgName"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblOgName"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCharityName" />
+
+    <TextView
+        android:id="@+id/CharityName"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/CharityName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblCharityName"
+        app:layout_constraintTop_toTopOf="@+id/lblCharityName" />
+
+    <TextView
+        android:id="@+id/OgName"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:text="@string/OgName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblOgName"
+        app:layout_constraintTop_toTopOf="@+id/lblOgName" />
+
+    <TextView
+        android:id="@+id/charityWebsite"
+        android:layout_width="186dp"
+        android:layout_height="22dp"
+        android:text="@string/charityWebsite"
+        app:layout_constraintStart_toEndOf="@+id/lblcharityWebsite"
+        app:layout_constraintTop_toTopOf="@+id/lblcharityWebsite" />
+
+    <TextView
+        android:id="@+id/lblcharityWebsite"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/lblcharityWebsite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblOgName" />
+
+    <TextView
+        android:id="@+id/titleCprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/titleCprofile"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCharityProfileDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBackCharityprofile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsetBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#0CC0DF"
+        android:text="@string/btnsetBudget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCharityPassword" />
+
+    <Button
+        android:id="@+id/btnsetInvetory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#0CC0DF"
+        android:text="@string/btnsetInvetory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsetBudget" />
+
+    <Button
+        android:id="@+id/btnBackCharityprofile"
+        android:layout_width="62dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E9525353"
+        android:freezesText="false"
+        android:text="@string/btnBackCharityprofile"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCharityProfileEdt"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#E9525353"
+        android:text="@string/btnCharityProfileEdt"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleCprofile"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen1">16dp</dimen>
+    <dimen name="dimen2">34dp</dimen>
+    <dimen name="dimen3">24dp</dimen>
+    <dimen name="dimen4">40dp</dimen>
+    <dimen name="dimen5">30dp</dimen>
+    <dimen name="dimen6">90dp</dimen>
+    <dimen name="inputHeight">48dp</dimen>
+    <dimen name="heading">34dp</dimen>
+    <dimen name="body">16dp</dimen>
+    <dimen name="dispHeight">45dp</dimen>
+    <dimen name="dispWidth">115dp</dimen>
+    <dimen name="dispWidthLongText">230dp</dimen>
+    <dimen name="topBar">600dp</dimen>
+    <dimen name="listItemHeight">30dp</dimen>
+    <dimen name="listItemWidth">350dp</dimen>
+    <dimen name="donateBtnHeight">40dp</dimen>
+    <dimen name="donateBtnWidth">120dp</dimen>
+    <dimen name="iclen">40dp</dimen>
+
+
+
+</resources>
